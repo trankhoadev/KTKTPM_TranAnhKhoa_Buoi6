@@ -9,7 +9,7 @@ public class ConfirmationReceiver {
 
     @JmsListener(destination = "confirmationQueue", containerFactory = "connectionFactory")
     public void receiveConfirmation(Confirmation confirmation) {
-        logger.info(" >>  Received confirmation: " + confirmation);
+        logger.info(" >>  Thong tin nhan duoc: " + confirmation);
 
     }
 }
